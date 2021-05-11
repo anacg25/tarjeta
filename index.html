@@ -1,0 +1,84 @@
+¿'<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- FONT AWESOME- Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Ventana de la tarjeta-->
+
+    <div class="tarjeta" id="Ventana">
+        <!--icono X--> <a href="javascript:cerrar()"><i class="fas fa-times fa-2x" id="cerrar"></i></a>
+        <!--Contenido Tarjeta-->
+        <div class="Contenido animate__animated animate__rubberBand">
+            <div>
+                <h1>Feliz cumpleaños mi amorcito </h1>
+            </div>
+            <br>
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Te espero en la posada del rancho</p>
+            
+            <i class="far fa-calendar-check"></i>
+            <p>Sábado 15</p>
+           
+            <i class="far fa-clock"></i> 
+            <p>Hora: 3 pm</p>
+        </div>
+    </div>
+
+    <!--Boton neon-->
+
+    <a href="javascript:abrir()" class="boton" id="bot">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Dame click
+    </a>
+
+
+
+    <!--Javascript Botones y animacíon-->
+
+    <script>
+
+
+        function abrir() {
+        
+            /*Aparece ventana*/
+
+            document.getElementById("Ventana").style.display = "block";
+
+            /*Oculta Boton*/
+            document.getElementById("bot").style.display = "none";
+        }
+
+
+
+        function cerrar() {
+            document.getElementById("Ventana").style.display = "none";
+            document.getElementById("bot").style.display = "block";
+        }
+
+
+    </script>
+
+    <!--Animate CSS-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
